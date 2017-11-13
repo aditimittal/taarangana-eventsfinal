@@ -1,0 +1,277 @@
+::-webkit-scrollbar { 
+    /* display: none;  */
+    width: 5px;
+    background: #000308;
+    border-radius: 10px;
+    
+}
+::-webkit-scrollbar-track{
+    background: #000308;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #444348;
+    border-radius: 10px;
+}
+
+.contact-us-img
+{
+    background: url('about_us.png');
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-us
+{
+    font-size: 2em;
+    text-align: center;
+    /*color: #0d0d0d;*/
+    letter-spacing: .06em;
+    margin: 0px 30px 0px 30px;
+}
+body{
+	background-color:black;
+	line-height: 1.42857143;
+}
+.thomso-pin-grid {
+    position: relative;
+    padding:10px 5px 0px 5px;
+    width:100%;
+	clear: both;
+    width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.thomso-pin-grid figure {
+	position: relative;
+    float: left;
+    width:100%;
+	overflow: hidden;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.thomso-pin-grid figure img {
+	position: relative;
+	display: block;
+	height: auto;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.thomso-pin-grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.thomso-pin-grid figure figcaption::before,
+.thomso-pin-grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.thomso-pin-grid figure figcaption,
+.thomso-pin-grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.thomso-pin-grid figure figcaption > a {
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.thomso-pin-grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.thomso-pin-grid figure h2 span {
+	font-weight: 800;
+}
+
+.thomso-pin-grid figure h2,
+.thomso-pin-grid figure p {
+	margin: 0;
+}
+
+.thomso-pin-grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.black_white_new img{
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    filter:grayscale(40%);
+}
+.black_white_new:hover img{
+    -webkit-transform: scale3d(1.1,1.1,1) !important;
+    /* transform: scale3d(1.1,1.1,1); */
+    filter:grayscale(0%);
+}
+figure.nik-custom-effect-glass {
+    background: black;
+    border-radius: 3px;
+}
+
+figure.nik-custom-effect-glass img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.nik-custom-effect-glass figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 100%;
+	background:linear-gradient(to top, rgba(255, 255, 255, 0) 40%, rgba(239, 239, 239, 0.7) 50%, rgba(0, 0, 0, 0) 60%);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.nik-custom-effect-glass p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 3em;
+	padding: 0 1em;
+	max-width: 150px;
+	border-right: 4px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.nik-custom-effect-glass h2 {
+    text-align: left;
+    margin-top: 10%;
+}
+
+figure.nik-custom-effect-glass:hover img {
+	opacity: 0.9;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.nik-custom-effect-glass:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.nik-custom-effect-glass:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+img.event{
+	height: 200px;
+	width: 200px;
+}
+.no_underline, .no_underline:active, .no_underline:focus, .no_underline:hover{
+    text-decoration:none;
+}
+.padding-float{
+    text-decoration: none;
+    font-family: "prashant";
+    /*padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;*/
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.padding-float-one{
+    text-decoration: none;
+    font-family: "prashant";
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    font-size: 1em;
+    letter-spacing: .08em;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.padding-float:hover{
+    opacity:0.25;
+}
+
+.padding-float-reg{
+    margin: 9px; 
+    padding: 10px;
+    color:white; 
+    border: 1px solid white;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.padding-float-reg:hover{
+    color:#000;
+    background: white;
+    border-color: transparent;
+}
+.navbar-underline-one:after{
+    content: "";
+    width: 213px;
+    height: 30px;
+    background: url('danda.png') no-repeat;
+    background-position: center center;
+    background-size: 193px 19px;
+    top: 13px;
+    right: -22px;
+    position: absolute;
+}
+.navbar-underline-two:after{
+    content: "";
+    width: 223px;
+    height: 30px;
+    background: url('danda.png') no-repeat;
+    background-position: center center;
+    background-size: 203px 19px;
+    top: 13px;
+    right: -20px;
+    position: absolute;
+}
+.navbar-underline-three:after{
+    content: "";
+    width: 210px;
+    height: 30px;
+    background: url('danda.png') no-repeat;
+    background-position: center center;
+    background-size: 185px 19px;
+    top: 13px;
+    right: -30px;
+    position: absolute;
+}
