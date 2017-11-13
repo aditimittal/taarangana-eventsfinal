@@ -203,10 +203,10 @@ img.event{
 .padding-float{
     text-decoration: none;
     font-family: "prashant";
-    /*padding-left: 1%;
+    padding-left: 1%;
     padding-right: 1%;
-    padding-top: 1%;*/
-    font-size: 1.2em;
+    padding-top: 1%;
+    font-size: 1em;
     letter-spacing: .1em;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -244,34 +244,45 @@ img.event{
 }
 .navbar-underline-one:after{
     content: "";
-    width: 213px;
+    width: 183px;
     height: 30px;
     background: url('danda.png') no-repeat;
     background-position: center center;
-    background-size: 193px 19px;
+    background-size: 163px 19px;
     top: 13px;
     right: -22px;
     position: absolute;
 }
 .navbar-underline-two:after{
     content: "";
-    width: 223px;
+    width: 193px;
     height: 30px;
     background: url('danda.png') no-repeat;
     background-position: center center;
-    background-size: 203px 19px;
+    background-size:183px 19px;
     top: 13px;
     right: -20px;
     position: absolute;
 }
 .navbar-underline-three:after{
     content: "";
-    width: 210px;
+    width: 182px;
     height: 30px;
     background: url('danda.png') no-repeat;
     background-position: center center;
-    background-size: 185px 19px;
+    background-size: 155px 19px;
     top: 13px;
     right: -30px;
     position: absolute;
+}
+.middle{
+    opacity:0;
+}
+figcaption:hover .middle{
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
